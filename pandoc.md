@@ -1,17 +1,15 @@
 
-# pandoc
-## License
-### License
-#### License
-``` pandoc
+# pandoc使用说明
+## word
+### word命令解析
+``` shell
 pandoc --citeproc --number-sections \
 --csl china-national-standard-gb-t-7714-2015-author-date.csl \
 --bibliography ref.bib -M reference-section-title="参考文献" \
 -M link-citations=true --reference-doc ref.docx input.md -o main.docx
 ```
 
-
-pandoc：执行 Pandoc 命令
+**pandoc：执行 Pandoc 命令**
 •	--citeproc：处理文献引用，也可用 -C 代替
 •	--number-sections：对各级标题编号，形如 1, 1.1, 1.1.1，也可用 -N 代替
 •	--csl china-national-standard-gb-t-7714-2015-author-date.csl：指定参考文献样式，这里使用的是 GB/T 7714-2015 的著者-出版年制格式，更多样式可以前往 Zotero Style Repository 下载
@@ -22,3 +20,19 @@ pandoc：执行 Pandoc 命令
 •	input.md：存储文章内容的 Markdown 文件
 •	-o main.docx：输出 DOCX 文件
 •	\：反斜杠，表示换行，你也可以删除它，把所有命令写在一行。
+
+### word增加title
+```yaml
+--- 
+title: "56所加解密设备测试报告"
+author: 刘松
+date: "2023-09-23"
+subject: "Markdown"
+keywords: [test]
+---
+```
+### 生成word文档示例
+```shell
+pandoc --citeproc -M reference-section-title="参考文献" -M link-citations=true --reference-doc templates_refine.docx 测试结果.md -o 测试结果.docx
+```
+
