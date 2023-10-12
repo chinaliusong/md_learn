@@ -1,6 +1,3 @@
-
-# 对比
-
 ## 数据类型
 
 ```typescript
@@ -52,4 +49,3 @@ lambda
 var foo = (x:number)=>10 + x 
 console.log(foo(100))      //输出结果为 110
 ```
-
