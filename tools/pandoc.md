@@ -33,6 +33,5 @@ keywords: [test]
 ```
 ### 生成word文档示例
 ```shell
-pandoc --citeproc -M reference-section-title="参考文献" -M link-citations=true --reference-doc templates_refine.docx 测试结果.md -o 测试结果.docx
+pandoc --filter pandoc-crossref todo-M chapters -M figureTitle="图" -M figPrefix="图" -M tableTitle="表" -M tblPrefix="表" --citeproc --number-sections -M reference-section-title="参考文献" --csl=../Standard/china-national-standard-gb-t-7714-2015-author-date.csl --bibliography=../Standard/ref.bib -M link-citations=true --reference-doc=../Standard/templates_refine.docx paper.md -o paper.docx
 ```
-
