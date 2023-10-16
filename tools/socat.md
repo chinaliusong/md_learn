@@ -26,11 +26,11 @@ socat -d -d pty,b115200 pty,b115200
 ### 创建串口与网络数据
 socat -d -d /dev/pts/2,raw,nonblock,ignoreeof,cr,echo=0 tcp-listen:5555,reuseaddr
 
-socat -dd PTY,link=/dev/virtualcom0,raw,echo=0 TCP-LISTEN:7890,fork,reuseaddr
+socat -dd pty,link=/dev/virtualcom0,raw,echo=0 TCP-LISTEN:7890,fork,reuseaddr
 
-socat -dd PTY,link=/dev/virtualcom1,raw,echo=0 TCP-LISTEN:5555,fork,reuseaddr
+socat -dd pty,link=/dev/virtualcom1,raw,echo=0 TCP-LISTEN:5555,fork,reuseaddr
 
-`socat PTY,link=/dev/virtualcom0,raw,echo=0 TCP-LISTEN:5678`
+`socat pty,link=/dev/virtualcom0,raw,echo=0 TCP-LISTEN:5678`
 
 文本模式(Text)会自动添加0D, 改成二进制(Binary)模式.
 
