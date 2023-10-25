@@ -1,4 +1,6 @@
+#linux
 # linux指令
+
 ## echo 输入16进制数
 echo 001122334455 | xxd -r -ps > test            // 6 个字节
 xxd // xxd 命令用于用二进制或十六进制显示文件的内容
@@ -7,3 +9,15 @@ xxd // xxd 命令用于用二进制或十六进制显示文件的内容
 
 ## grep
 grep -E "a|b"
+
+## minicom
+`minicom -D /dev/tty -b115200 -H`
+-D 设备名
+-H 16进制
+-b 波特率
+`Ctrl+A Z`  帮助
+
+## socat
+
+[[socat]]
+

@@ -1,4 +1,4 @@
-
+#linux
 # shell
 ## linux shell
 ### 变量
@@ -76,6 +76,7 @@ read(选项)(参数)
         如果没有在指定的时间内输入，就不再等待了。。 
 参数变量：指定读取值的变量名
 ```
+
 #### 系统函数 basename dirname
 ```sh
 用于返回完整路径最后 / 的部分，常用于获取文件名 
@@ -90,3 +91,7 @@ read(选项)(参数)
     dirname /home/aaa/test.txt
 ```
    
+# linux cmd
+
+linux指令可作为shell脚本内容
+[[linux_cmd]]

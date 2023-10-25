@@ -1,5 +1,5 @@
+#learn #computer #cpp
 # 基础知识
-
 ## 宏定义 
     #宏定义字符串化
     ##字符串连接
@@ -108,12 +108,17 @@ vector是一片连续的空间
 list是双向链表
 deque是空间加链表，双端队列
 #### 容器适配器
+```C++
 stack -栈
   stack<int> s -默认使用deque
   stack<int,vector<int>> s -指定使用vector
+```
+```C++
 queue -队列
   queue<int> q -默认使用deque
   queue<int,list<int>> q -指定使用list
+```
+```C++
 priority_queue -优先队列
   priority_queue<int> q -默认使用vector
   priority_queue<int,deque<int>> q -指定使用deque
@@ -124,6 +129,7 @@ struct compare{
     return
   }
 };
+```
 
 ### 关联容器 key-value
 关联容器中key必须是可比较的，底层通过红黑树实现
@@ -146,3 +152,14 @@ const 成员函数 char geta() const{return a;},表示在函数中不能修改�
 ## 构造函数
 系统会自动生成一个无参构造函数和一个拷贝构造函数
 **构造函数初始化列表为空，系统会默认执行初始化列表中自动初始化数据成员**
+
+## C++11新特性
+C++语言新特性
+[[cpp11]]
+C++11新支持的库
+[[lib_regex]]
+
+# 编译
+[[makefile]]
+
+[[cmake]]

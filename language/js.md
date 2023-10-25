@@ -1,3 +1,4 @@
+#learn #computer  #javascript 
 ## 数据类型
 
 ```typescript

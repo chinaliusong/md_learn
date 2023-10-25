@@ -1,3 +1,4 @@
+#learn #computer #cpp
 # C++11新特性
 ![Alt text](../../DrawBed/language/cpp/c++11.png)
 ## 新增声明

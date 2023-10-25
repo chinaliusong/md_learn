@@ -1,0 +1,15 @@
+{
+  "pdfExportSettings": {
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "showLineNumber": true,
+  "livePreview": false,
+  "defaultViewMode": "source",
+  "alwaysUpdateLinks": true,
+  "vimMode": false,
+  "useMarkdownLinks": false,
+  "attachmentFolderPath": "Excalidraw"
+}

@@ -30,6 +30,7 @@ title: markdown使用笔记
 | :-: | :-: |
 |  >  |  1  |
 |  2  |     |
+|算法
 
 #### 上下合并
 
@@ -37,6 +38,7 @@ title: markdown使用笔记
 | --- | --- |
 | 1   | 2   |
 | ^   | 4   |
+
 
 ## 网址引用
 [GitHub](https://github.com)
@@ -77,16 +79,16 @@ $f(x) = sin(x)+12$
 ## 交叉引用
 ### 图交叉引用
 #### 单图交叉引用
-![引用测试图](../DrawBed/learn/markdown/引用测试图.png){#fig:id}
+![引用测试图](../../DrawBed/learn/markdown/引用测试图.png){#fig-id}
 
 详情见[@fig:id]
 
 #### 双图交叉引用
 <div id="fig:figureRef">
 
-![测试图1](../DrawBed/learn/markdown/引用测试图.png){#fig:figureRefA}
+![测试图1](../../DrawBed/learn/markdown/引用测试图.png){#fig:figureRefA}
 
-![测试图2](../DrawBed/learn/markdown/引用测试图.png){#fig:figureRefB}
+![测试图2](../../DrawBed/learn/markdown/引用测试图.png){#fig:figureRefB}
 
 总图名
 
@@ -121,6 +123,20 @@ Cool figure!
 | 1    | SvcNetReceive.exe | 接收测试软件 |
 | 2    | SvcNetSend.exe    | 发送测试软件 |
 | 3    | wireshark         | 抓包软件     |
+|||
+Quarto 文章正文的默认宽度约为 700 像素。 这通常会在文档页边距中留下一些可用空间，读者可以通过多种方式利用该空间。
+
+我们可以使用 `column: page-right` 选项来指示所需图形占据屏幕的整个宽度，并加入一些图形。例如，以下代码并排加入了两个图形。
+
+```text
+#| label: fig-histogram
+#| fig-cap: "Histograms of individual variables"
+#| fig-subcap:
+#|   - "Histogram of `price`s"
+#|   - "Histogram of `area`s" 
+#| layout-ncol: 2
+#| column: page-right
+```
 
 : tableName {#tbl:label}
 
